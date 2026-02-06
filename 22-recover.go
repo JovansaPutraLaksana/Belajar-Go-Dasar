@@ -2,12 +2,16 @@ package main
 
 import "fmt"
 
-func endApplication() {
+func endApp() {
 	fmt.Println("Aplikasi selesai")
+	massage := recover()
+	if massage != nil {
+		fmt.Println("Terjadi error:", massage)
+	}
 }
 
-func runApp(error bool) {
-	defer endApplication()
+func runApps(error bool) {
+	defer endApp()
 	if error {
 		panic("Aplikasi error")
 	}
@@ -15,5 +19,5 @@ func runApp(error bool) {
 
 func main() {
 	//panic berfungsi untuk menghentikan program secara paksa
-	runApp(true)
+	runApps(true)
 }
