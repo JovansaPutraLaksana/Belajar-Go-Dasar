@@ -55,8 +55,23 @@ func executeFunction(fn func(string) string, name string) string {
 	return fn(name)
 }
 
+//type declaration for function type
+type stringFunction func(string) string
+
 func main() {
+	//variable function
 	say := sayName
+
+	//anonymous function
+	greet := func(name string) string {
+		return "Hi, " + name
+	}
+	fmt.Println(greet("Charlie"))
+
+	//immediate invocation of anonymous function
+	func(msg string) {
+		fmt.Println(msg)
+	}("This is an immediate invocation")
 
 	sayHello()
 
