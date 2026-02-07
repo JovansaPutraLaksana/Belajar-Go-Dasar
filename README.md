@@ -1,18 +1,55 @@
-# Belajar-Go-Dasar
-Repository ini merupakan dokumentasi pribadi pemilik repository dalam mempelajari dan memahami bahasa pemrograman Go dasar
+BELAJAR GO DASAR
+=================
 
-# Inisialisasi project
-go mod init <nama-module>
+Repository ini merupakan dokumentasi pribadi penulis untuk mempelajari dan memahami
+bahasa pemrograman Go (Golang) dasar.
 
-# Aturan main function
-Main Func adalah sebuah fungsi yang akan dijalankan saat program berjalan.
-Main Func harus berada dalam package main.
+----------------------------------------------------------------------
+TENTANG
+----------------------------------------------------------------------
 
-# Cara menjalankan kode
-go build (melakukan compile program sehingga menghasilkan file yang dapat di run)
-go run <nama-file> (run biasa untuk debug)
+Go (Golang) adalah bahasa pemrograman yang dikembangkan oleh Google dan dikenal
+karena performa tinggi, sintaks sederhana, serta dukungan konkruensi yang kuat.
 
-# Multiple main function
-function dalam module bersifat unik (tidak boleh memiliki nama function yang sama)
-oleh karena itu main func dari module go hanya ada satu.
+Repository ini berisi contoh-contoh dasar bahasa Go seperti:
+- Tipe data
+- Control flow
+- Function
+- Pointer
+- Struct
+- Interface
+- Error handling
+- Dan lain-lain
 
+----------------------------------------------------------------------
+CARA MENJALANKAN KODE
+----------------------------------------------------------------------
+
+1) Pastikan Go sudah terpasang di sistem kamu.
+   Panduan resmi instalasi:
+   https://go.dev/doc/install
+
+2) Clone repository ini:
+
+   git clone https://github.com/JovansaPutraLaksana/Belajar-Go-Dasar.git
+   cd Belajar-Go-Dasar
+
+3) Jalankan file Go yang ingin kamu pelajari:
+
+   go run 00-helloworld.go
+
+4) Atau compile terlebih dahulu:
+
+   go build nama_file.go
+   ./nama_file
+
+----------------------------------------------------------------------
+KETERANGAN SINGKAT BEBERAPA MATERI
+----------------------------------------------------------------------
+
+- 00-helloworld.go : Program Go pertama yang mencetak "Hello World"
+- 14-if.go         : Belajar kontrol alur dengan statement if
+- 16-forloop.go    : Struktur perulangan pada Go
+- 23-struct.go     : Membuat dan menggunakan struct
+- 25-interface.go  : Memahami interface di Go
+- 29-pointer.go    : Belajar pointer dan cara kerjanya di Go
